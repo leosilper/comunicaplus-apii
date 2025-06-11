@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: oracle ## ou 'oracle' para trocar
+
+server:
+  port: ${PORT:8080}
+
+
+# Comum para os dois perfis
+springdoc:
+  api-docs.path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    br.com.fiap.comunicaplus_api_main.config: DEBUG
