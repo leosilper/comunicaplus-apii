@@ -13,8 +13,8 @@ RUN chmod +x mvnw
 # Compila o projeto sem rodar os testes
 RUN ./mvnw clean package -DskipTests
 
-# Expõe a porta usada pela aplicaçãoo
+# Expõe a porta usada pela aplicação
 EXPOSE 8080
 
-# Executa o arquivo JAR gerado
-CMD ["java", "-jar", "target/comunicaplus-api-main-0.0.1-SNAPSHOT.jar"]
+# Executa o arquivo JAR gerado (nome correto com base no pom.xml)
+CMD ["java", "-jar", "target/comunica_api-0.0.1-SNAPSHOT.jar"]
