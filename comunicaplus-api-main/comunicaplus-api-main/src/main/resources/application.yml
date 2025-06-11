@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: oracle ## ou 'oracle' para trocar
+    active: h2 ## ou 'oracle' para trocar
 
 server:
   port: ${PORT:8080}
