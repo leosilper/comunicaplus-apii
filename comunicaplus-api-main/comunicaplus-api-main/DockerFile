@@ -13,7 +13,7 @@ RUN chmod +x mvnw
 # Compila o projeto sem rodar os testes
 RUN ./mvnw clean package -DskipTests
 
-# Expõe a porta usada pela aplicação
+# Expõe a porta usada pela aplicaçãoo
 EXPOSE 8080
 
 # Executa o arquivo JAR gerado
